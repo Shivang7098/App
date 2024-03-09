@@ -2,7 +2,7 @@ import axios from "axios";
 import { loadUserFailure, loadUserRequest, loadUserSuccess, loginFailure, loginRequest, loginSuccess, logoutFailure, logoutRequest, logoutSuccess, registerFailure, registerRequest, registerSuccess, verificationFailure, verificationRequest, verificationSuccess } from "./authSlice";
 import { addTaskFailure, addTaskRequest, addTaskSuccess, deleteTaskFailure, deleteTaskRequest, deleteTaskSuccess, forgetPasswordFailure, forgetPasswordRequest, forgetPasswordSuccess, resetPasswordFailure, resetPasswordRequest, resetPasswordSuccess, updatePasswordFailure, updatePasswordRequest, updatePasswordSuccess, updateProfileFailure, updateProfileRequest, updateProfileSuccess, updateTaskFailure, updateTaskRequest, updateTaskSuccess } from "./messageSlice";
 // type ipconfig on cmd copy ip address ->192.168.188.42 and loaclhost replaced by ip address
-const serverUrl = "http://192.168.188.42:8080/api/v1";
+const serverUrl = "https://app-server-nofo.onrender.com/api/v1";
 
 
 export const login = (email, password) => async (dispatch) => {
